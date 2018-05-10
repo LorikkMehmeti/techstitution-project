@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Contracts</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Submit <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contracts.html">Contracts</a>
+          </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <form class="" action="index.html" method="post">
+        <div class="col-12 col-md-8 offset-md-2">
+            <div class="col-md-12">
+              <h2 class="text-primary">Shto kontratën e re</h2>
+              <h4>Prokurimi:</h4>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="nrprokurimi">Nr. rendor i prokurimit</label>
+                  <input type="number" min="0" class="form-control" id="nr_proc" name="nr_proc" placeholder="Nr. rendor i prokurimit"value="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="llojiprokurimit">Lloji i prokurimit</label>
+                  <input type="text" class="form-control" id="type_proc"name="type_proc"placeholder="Lloji i prokurimit" value="">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="aktivitetiPR">Aktiviteti i prokurimit</label>
+                  <input type="text"class="form-control" placeholder="Aktiviteti i prokurimit" id="act_proc" name="act_proc" value="">
+                </div>
+              </div>
+              <h4>Datat:</h4>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="datapr">Data e inicimit të aktivitetit të prokurimit</label>
+                  <input type="date" class="form-control" id="date_init" name="date_init" placeholder="Nr. rendor i prokurimit"value="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="datash">Data e publikimit të shpalljes</label>
+                  <input type="date"class="form-control" id="date_publish"name="date_publish"placeholder="Lloji i prokurimit" value="">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="datash">Data e nënshkrimit të kontratës</label>
+                  <input type="date"class="form-control" id="date_signing"name="date_signing"placeholder="Lloji i prokurimit" value="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="datapr">Afatet per implementimin e kontrates(1)</label>
+                  <input type="date"class="form-control" id="date_publish"name="date_publish" placeholder="Nr. rendor i prokurimit"value="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="datapr">Afatet per implementimin e kontrates(2)</label>
+                  <input type="date"class="form-control" id="time_imp_1"name="time_imp_1" placeholder="Nr. rendor i prokurimit"value="">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="datapr">Data e permbylljes se kontrates (data e pranimit te perkohshem / preliminar)</label>
+                  <input type="date"class="form-control" id="time_imp_2"name="time_imp_2" placeholder="Nr. rendor i prokurimit"value="">
+                </div>
+              </div>
+              <h4>Çmimi dhe te dhenat e tjera:</h4>
+              <div class="form-row">
+                <div class="input-group col-md-6">
+                  <label for="nrprokurimi">Çmimi i kontrates (perfshire taksat)</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">€</span>
+                    </div>
+                    <input type="number"min="0" step="0.01" class="form-control" id="contract_price" name="contract_price" placeholder="Çmimi i kontrates" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="input-group col-md-6">
+                  <label for="nrprokurimi">Çmimi total i paguar per kontraten</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">€</span>
+                    </div>
+                    <input type="number"min="0"step="0.01" class="form-control"id="total_price" name="total_price" placeholder="Çmimi total" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="aktivitetiPR">Emri i te cilit i eshte dhene kontrata</label>
+                  <input type="text" class="form-control"placeholder="Emri dhe Mbiemri" id="contractor_name" name="contractor_name" value="">
+                </div>
+              </div>
+              <div class="col-md-12"style="display:inline-block;">
+                <button type="button"id="submit-contract" class="btn btn-primary btn-lg btn-block">Create</button>
+              </div>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </body>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"></script>
+  <script src="public/main.js"></script>
+</html>
