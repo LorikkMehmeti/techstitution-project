@@ -10,4 +10,4 @@ In terminal write the following commands:
 -cd contract-api  
 -npm install  
 -npm start or node app.js  
--In terminal start MondoDB: "mongod"  
+-In another terminal start MondoDB: "mongod"  
